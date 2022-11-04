@@ -806,6 +806,17 @@ entries:
   ocp-console-notification:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-11-04T05:34:21.156923633Z"
+    description: Chart to create a ConsoleNotification resource in an OpenShift cluster
+      4x
+    digest: 454dd01f74ff227954c11e1a6b81de104190600a192ec270fdce19e5448d5a00
+    name: ocp-console-notification
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-console-notification-0.2.2/ocp-console-notification-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-11-04T04:56:12.807309078Z"
     description: Chart to create a ConsoleNotification resource in an OpenShift cluster
       4
@@ -1187,4 +1198,4 @@ entries:
     urls:
     - https://github.com/tutorial-gitops/toolkit-charts/releases/download/tool-test-0.2.1/tool-test-0.2.1.tgz
     version: 0.2.1
-generated: "2022-11-04T04:55:57.102467204Z"
+generated: "2022-11-04T05:34:21.157245739Z"
