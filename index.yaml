@@ -1,0 +1,1190 @@
+apiVersion: v1
+entries:
+  argocd-config:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:55:57.409702352Z"
+    description: Helm chart to create ArgoCD custom resources for projects and applications
+      with optional RBAC configuration to allow ArgoCD to create resources in other
+      namespaces
+    digest: 5326f5775218ebf71c03f54e824f27392ebc6888518b271518e5740e6924cf29
+    name: argocd-config
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/argocd-config-0.24.0/argocd-config-0.24.0.tgz
+    version: 0.24.0
+  argocd-hook-job:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:55:57.613026016Z"
+    description: A Helm chart for Kubernetes
+    digest: 9168e47b12b24a4cf1d7435efa61cd35bdaffed8c2e44a4eb44da7997eefa645
+    name: argocd-hook-job
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/argocd-hook-job-0.1.4/argocd-hook-job-0.1.4.tgz
+    version: 0.1.4
+  argocd-operator:
+  - apiVersion: v2
+    appVersion: 0.4.0
+    created: "2022-11-04T04:55:57.829465291Z"
+    description: A Helm chart to install ArgoCD via the operator
+    digest: ce05601ff1a49b6241cc775ba6097eab37d30a4f279cdb886abe7b5c3202a73a
+    name: argocd-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/argocd-operator-0.6.1/argocd-operator-0.6.1.tgz
+    version: 0.6.1
+  assign-group-cronjob:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-11-04T04:55:58.043569664Z"
+    description: A Helm chart to generate a cron job that adds all users to a group
+    digest: 15016bca820144be4e001aaa617dc65630b89fd8e77260fe1eea9fd0aeb8857e
+    name: assign-group-cronjob
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/assign-group-cronjob-0.2.1/assign-group-cronjob-0.2.1.tgz
+    version: 0.2.1
+  baas-supplemental:
+  - apiVersion: v2
+    appVersion: 10.1.8.2
+    created: "2022-11-04T04:55:58.280750256Z"
+    description: Supplemental objects for Spectrum Protect Plus - Container Backup
+      Support
+    digest: 118ba27f57d31287a83e367366f4b859712401ddeaca0d66cf6aec28d9d3ead7
+    name: baas-supplemental
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/baas-supplemental-0.1.0/baas-supplemental-0.1.0.tgz
+    version: 0.1.0
+  cloud-portworx:
+  - apiVersion: v2
+    appVersion: 2.8.1.5
+    created: "2022-11-04T04:55:58.494981829Z"
+    description: A Helm chart to install Portworx in a cloud environment (AWS or Azure)
+    digest: ba62ccf2d284cdd9d1be8788d708b617fe87e985996d4bb08863eeb8633f5b4f
+    name: cloud-portworx
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/cloud-portworx-0.1.0/cloud-portworx-0.1.0.tgz
+    version: 0.1.0
+  cloud-setup:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:55:58.697676992Z"
+    dependencies:
+    - name: ibmcloud
+      repository: https://ibm-garage-cloud.github.io/toolkit-charts/
+      version: 0.3.1
+    - alias: cntk-dev-guide
+      name: doc-config
+      repository: https://ibm-garage-cloud.github.io/toolkit-charts/
+      version: 0.1.0
+    - alias: first-app
+      name: doc-config
+      repository: https://ibm-garage-cloud.github.io/toolkit-charts/
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: 37e00da64217037ba393d94c0d84879d0279c4b00c46062d63d140a1473e40ec
+    name: cloud-setup
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/cloud-setup-0.3.1/cloud-setup-0.3.1.tgz
+    version: 0.3.1
+  console-link-configmap:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:55:58.907675062Z"
+    description: A Helm chart for Kubernetes
+    digest: c6e5220e0d9b1badfc46f2b2a1c5886a8a922a67c809ee1e126a7750ab8a62c7
+    name: console-link-configmap
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/console-link-configmap-0.2.0/console-link-configmap-0.2.0.tgz
+    version: 0.2.0
+  console-link-cronjob:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-11-04T04:55:59.09155771Z"
+    description: A Helm chart to generate a cron job that watches Routes for annotations
+      and generates ConsoleLinks if they are present
+    digest: eceba3a69d69cdae8b39eae5bcb6618b0d409cdbcbe0261e3275494731872ec5
+    name: console-link-cronjob
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/console-link-cronjob-0.5.1/console-link-cronjob-0.5.1.tgz
+    version: 0.5.1
+  cp-platform-navigator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:55:59.304597383Z"
+    description: A Helm chart for Kubernetes
+    digest: 51284f988d4abde42f5f3639d8de524f58677c18fd06b05122a4757de10599fe
+    name: cp-platform-navigator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/cp-platform-navigator-0.1.0/cp-platform-navigator-0.1.0.tgz
+    version: 0.1.0
+  developer-dashboard:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-04T04:55:59.510120849Z"
+    description: A Helm chart for Kubernetes
+    digest: 706992259ec8a8b8bc435a3456a1d7a0fb8fc0e614aebbc9b3bf5840fa1b2ca5
+    name: developer-dashboard
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/developer-dashboard-1.4.1/developer-dashboard-1.4.1.tgz
+    version: 1.4.1
+  doc-config:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-04T04:55:59.715564415Z"
+    description: A Helm chart to configure links to documentation within the cluster
+    digest: 11eae20b562dd88dbbd2fbfda24eaec86d0e46ce208d35b5b7acd15169fd137f
+    name: doc-config
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/doc-config-0.1.0/doc-config-0.1.0.tgz
+    version: 0.1.0
+  elasticsearch-operator:
+  - apiVersion: v2
+    appVersion: 1.17.0
+    created: "2022-11-04T04:55:59.929364987Z"
+    description: A Helm chart for Kubernetes
+    digest: 9fd4ed24f166e0e7672735e30446ec8087888097b5cd2bd8a22ed59444b5bf26
+    name: elasticsearch-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/elasticsearch-operator-0.6.0/elasticsearch-operator-0.6.0.tgz
+    version: 0.6.0
+  gitea-instance:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:00.13090695Z"
+    description: A Helm chart for Kubernetes
+    digest: 9b44a7f06367b9de9603af00cb8ff0eaddf3f0a7e3af45ff7e4e2b4cc5819d8e
+    name: gitea-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/gitea-instance-0.1.3/gitea-instance-0.1.3.tgz
+    version: 0.1.3
+  gitea-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:00.36584154Z"
+    description: A Helm chart for Kubernetes
+    digest: 68fa05fb30e9c8645e28dd5a9ed7f32b15eccaaf70c57b54077f9207aeba2337
+    name: gitea-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/gitea-operator-0.1.3/gitea-operator-0.1.3.tgz
+    version: 0.1.3
+  grafana-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:00.580142613Z"
+    description: A Helm chart for Kubernetes
+    digest: 9853922baa90aa9c420445d3e747f6fd90891f880673a48b7ee3722950f769af
+    name: grafana-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/grafana-operator-0.1.0/grafana-operator-0.1.0.tgz
+    version: 0.1.0
+  hivecluster:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:00.876242652Z"
+    description: A Helm chart for deploying OpenShift clusters via Hive/RHACM
+    digest: 36a61a9672836649e548a33984bbdd124df4b57d98d1594250d0e68d8c48e93d
+    name: hivecluster
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/hivecluster-0.3.2/hivecluster-0.3.2.tgz
+    version: 0.3.2
+  ibm-ace-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:01.162896784Z"
+    description: A Helm chart for Kubernetes
+    digest: 44fe4b3981f624eff572419bd62d08ac28720181d1f3fff6fd3a4a68afc65eb3
+    name: ibm-ace-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-ace-operator-0.2.2/ibm-ace-operator-0.2.2.tgz
+    version: 0.2.2
+  ibm-apic-a7s-instance:
+  - apiVersion: v2
+    appVersion: 10.0.3.0-ifix1
+    created: "2022-11-04T04:56:01.372709453Z"
+    description: A Helm chart for Kubernetes
+    digest: 4b480f8a60a547050f6cfb445af0d1982aaa92f3a522c16accfbf7df61bc8684
+    name: ibm-apic-a7s-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-apic-a7s-instance-1.0.0/ibm-apic-a7s-instance-1.0.0.tgz
+    version: 1.0.0
+  ibm-apic-gtw-instance:
+  - apiVersion: v2
+    appVersion: 10.0.3.0-ifix1
+    created: "2022-11-04T04:56:01.659710385Z"
+    description: A Helm chart for Kubernetes
+    digest: ccf73556b1ec16cb7e3f6aa4884bad1898b407d0118db2d12ceb4cab1edb52e9
+    name: ibm-apic-gtw-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-apic-gtw-instance-1.0.0/ibm-apic-gtw-instance-1.0.0.tgz
+    version: 1.0.0
+  ibm-apic-instance:
+  - apiVersion: v2
+    appVersion: 10.0.3.0-ifix1
+    created: "2022-11-04T04:56:01.863334749Z"
+    description: A Helm chart for Kubernetes
+    digest: 97e9d6cf849d4e0de6a2e9126656ed45fc51c9d2294b774efc8115519b727235
+    name: ibm-apic-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-apic-instance-1.0.0/ibm-apic-instance-1.0.0.tgz
+    version: 1.0.0
+  ibm-apic-mgmt-instance:
+  - apiVersion: v2
+    appVersion: 10.0.3.0-ifix1
+    created: "2022-11-04T04:56:02.116350254Z"
+    description: A Helm chart for Kubernetes
+    digest: 4668ab7fd9f7fa7cd23630bfcd3b32caba3cfbca4626eedcbea89003b21b2fcb
+    name: ibm-apic-mgmt-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-apic-mgmt-instance-1.0.0/ibm-apic-mgmt-instance-1.0.0.tgz
+    version: 1.0.0
+  ibm-apic-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:02.338265133Z"
+    description: A Helm chart for Kubernetes
+    digest: 4da6a02666ebdb6d87e301ba1f590682f413462cf7c410bd72b49540bd2d8a74
+    name: ibm-apic-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-apic-operator-0.1.0/ibm-apic-operator-0.1.0.tgz
+    version: 0.1.0
+  ibm-apic-ptl-instance:
+  - apiVersion: v2
+    appVersion: 10.0.3.0-ifix1
+    created: "2022-11-04T04:56:02.546526501Z"
+    description: A Helm chart for Kubernetes
+    digest: 7bbe668048ba2eef22fc0a9600281e4e49da1174a0f6b2b6d7db918ab406a9d9
+    name: ibm-apic-ptl-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-apic-ptl-instance-1.0.0/ibm-apic-ptl-instance-1.0.0.tgz
+    version: 1.0.0
+  ibm-aspera-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:02.759083273Z"
+    description: A Helm chart for Kubernetes
+    digest: 4dc5cddc86d9ffe0b85b49b1c0548df642b60e990d1a2c576b8d3f3c4b6118fd
+    name: ibm-aspera-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-aspera-operator-0.1.0/ibm-aspera-operator-0.1.0.tgz
+    version: 0.1.0
+  ibm-assetrepository-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:03.009434775Z"
+    description: A Helm chart for Kubernetes
+    digest: dc5ebb161e08b6d2abad26f2e7432c0287594855998a07a8c72cb9449509570a
+    name: ibm-assetrepository-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-assetrepository-operator-0.1.0/ibm-assetrepository-operator-0.1.0.tgz
+    version: 0.1.0
+  ibm-automation-foundation-core-operator:
+  - apiVersion: v2
+    appVersion: "1.2"
+    created: "2022-11-04T04:56:03.217450656Z"
+    description: A Helm chart for Kubernetes
+    digest: e2e291d876ebb1fe126b428f3744be5d5408b46b55f3048d6c4000c83b5c5fc9
+    name: ibm-automation-foundation-core-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-automation-foundation-core-operator-0.1.2/ibm-automation-foundation-core-operator-0.1.2.tgz
+    version: 0.1.2
+  ibm-catalogs:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:03.425551044Z"
+    description: A Helm chart for Kubernetes
+    digest: f4640e97fba21412bd77f0d9f02c8e24236a2a132f70e51fbb494e2e5df924fc
+    name: ibm-catalogs
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-catalogs-0.3.1/ibm-catalogs-0.3.1.tgz
+    version: 0.3.1
+  ibm-common-services:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:03.652087748Z"
+    description: A Helm chart for Kubernetes
+    digest: 6a9e1e11c50a1f12ce83cb25f6af17bbe0bdff9ffb5923103fc66d2772cfe318
+    name: ibm-common-services
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-common-services-0.2.1/ibm-common-services-0.2.1.tgz
+    version: 0.2.1
+  ibm-common-services-instance:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:03.856355832Z"
+    description: A Helm chart for Kubernetes
+    digest: 881f15dffffc34ddbb85f2a112e418f6827c3b6d28a4963cbbc91c158e613d32
+    name: ibm-common-services-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-common-services-instance-0.1.0/ibm-common-services-instance-0.1.0.tgz
+    version: 0.1.0
+  ibm-cp4a-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:04.059058415Z"
+    description: A Helm chart for Kubernetes
+    digest: cd8706ecadac3fda6daac4836593de76721922f5f2020f4c765fbc46e511edb5
+    name: ibm-cp4a-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cp4a-operator-0.1.0/ibm-cp4a-operator-0.1.0.tgz
+    version: 0.1.0
+  ibm-cp4d-analytics-engine-instance:
+  - apiVersion: v2
+    appVersion: 4.0.4
+    created: "2022-11-04T04:56:04.299039931Z"
+    description: A Helm chart for Kubernetes
+    digest: f756e137c88bdb08a7befc2761ddc5e87c3c7cb0aafab3365a208b2139ffe788
+    name: ibm-cp4d-analytics-engine-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cp4d-analytics-engine-instance-0.1.0/ibm-cp4d-analytics-engine-instance-0.1.0.tgz
+    version: 0.1.0
+  ibm-cp4d-data-virtualization-instance:
+  - apiVersion: v2
+    appVersion: 1.7.8
+    created: "2022-11-04T04:56:04.51961203Z"
+    description: A Helm chart for Kubernetes
+    digest: f3cc7a1383c3392e3c0c53003ebd9de38fda5144ceb0ca826ef4d30811b0a07a
+    name: ibm-cp4d-data-virtualization-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cp4d-data-virtualization-instance-0.1.0/ibm-cp4d-data-virtualization-instance-0.1.0.tgz
+    version: 0.1.0
+  ibm-cp4d-watson-knowledge-catalog-instance:
+  - apiVersion: v2
+    appVersion: 4.0.4
+    created: "2022-11-04T04:56:04.73007662Z"
+    description: A Helm chart for Kubernetes
+    digest: 8d1a71f2bd217917f32b6c3073f85d1fc661725bfec5ac2a8ac3803912e79d3e
+    name: ibm-cp4d-watson-knowledge-catalog-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cp4d-watson-knowledge-catalog-instance-0.1.0/ibm-cp4d-watson-knowledge-catalog-instance-0.1.0.tgz
+    version: 0.1.0
+  ibm-cp4d-watson-machine-learning-instance:
+  - apiVersion: v2
+    appVersion: 4.0.9
+    created: "2022-11-04T04:56:04.972848239Z"
+    description: A Helm chart for Kubernetes
+    digest: 98049433b8463bac0de850ede1cc3836735a974666ad4e6f81c9395e923b95e6
+    name: ibm-cp4d-watson-machine-learning-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cp4d-watson-machine-learning-instance-0.1.0/ibm-cp4d-watson-machine-learning-instance-0.1.0.tgz
+    version: 0.1.0
+  ibm-cp4d-watson-studio-instance:
+  - apiVersion: v2
+    appVersion: 4.0.4
+    created: "2022-11-04T04:56:05.190122434Z"
+    description: A Helm chart for Kubernetes
+    digest: 5ea43fdec822f3c34db9d6914f4099c0edf4383064ba0659d557a4bd81458927
+    name: ibm-cp4d-watson-studio-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cp4d-watson-studio-instance-0.1.2/ibm-cp4d-watson-studio-instance-0.1.2.tgz
+    version: 0.1.2
+  ibm-cp4i-operators:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:05.403713327Z"
+    description: A Helm chart for Kubernetes
+    digest: e597371976b8ec90d58bbae0ae0094305d10fdf53f237924c4fc0087326b68fa
+    name: ibm-cp4i-operators
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cp4i-operators-0.2.2/ibm-cp4i-operators-0.2.2.tgz
+    version: 0.2.2
+  ibm-cp4sthreatmanagements-instance:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:05.601564505Z"
+    description: A Helm chart for Kubernetes
+    digest: d62fad6ce146bd6ef801e6037bc1383e5f06cccd48a7c434127396aafeb01487
+    name: ibm-cp4sthreatmanagements-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cp4sthreatmanagements-instance-0.1.1/ibm-cp4sthreatmanagements-instance-0.1.1.tgz
+    version: 0.1.1
+  ibm-cpd-ds-instance:
+  - apiVersion: v2
+    appVersion: "4"
+    created: "2022-11-04T04:56:05.822147004Z"
+    description: A Helm chart for Cloud Pak for Data - DataStage service
+    digest: bddd73c05bc3bb708fcaee5f18f87fbc73060bd6382109d98d1196657af95ac6
+    name: ibm-cpd-ds-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cpd-ds-instance-1.0.0/ibm-cpd-ds-instance-1.0.0.tgz
+    version: 1.0.0
+  ibm-cpd-platform-instance:
+  - apiVersion: v2
+    appVersion: 4.0.4
+    created: "2022-11-04T04:56:06.040603801Z"
+    description: A Helm chart for Kubernetes
+    digest: 124e22bd5a9de1c5d281ab017d850675ef67863856f2aec303c8bf585127ecb8
+    name: ibm-cpd-platform-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cpd-platform-instance-0.1.2/ibm-cpd-platform-instance-0.1.2.tgz
+    version: 0.1.2
+  ibm-cpd-platform-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:06.240482581Z"
+    description: A Helm chart for Kubernetes
+    digest: 31118f0296ef5dfe88b39304959feac7244e189a34f2704f6a3c5bce60114ee9
+    name: ibm-cpd-platform-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cpd-platform-operator-0.1.0/ibm-cpd-platform-operator-0.1.0.tgz
+    version: 0.1.0
+  ibm-cpd-scheduling-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:06.491194007Z"
+    description: A Helm chart for Kubernetes
+    digest: 09f7d7ad4dcd9b531d685f24d3a5d25a1fb453278cda9bad045cde415f148dd3
+    name: ibm-cpd-scheduling-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cpd-scheduling-operator-0.1.1/ibm-cpd-scheduling-operator-0.1.1.tgz
+    version: 0.1.1
+  ibm-cpd-wos-instance:
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: "2022-11-04T04:56:06.713651008Z"
+    description: A Helm chart for Kubernetes
+    digest: b97c7c0b1118e0749b9ea821a24e283e86a2589fbf1cf17d81d2f484068f8d27
+    name: ibm-cpd-wos-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-cpd-wos-instance-0.1.0/ibm-cpd-wos-instance-0.1.0.tgz
+    version: 0.1.0
+  ibm-datapower-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:06.916896791Z"
+    description: A Helm chart for Kubernetes
+    digest: ceaa567ec6d6ed929d7304ccf2aa12e60f890b046dfbfbeb207a0d1846ab6375
+    name: ibm-datapower-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-datapower-operator-0.1.0/ibm-datapower-operator-0.1.0.tgz
+    version: 0.1.0
+  ibm-db2u-operator:
+  - apiVersion: v2
+    appVersion: "1.1"
+    created: "2022-11-04T04:56:07.146382098Z"
+    description: A Helm chart for Kubernetes
+    digest: dcdc7aa49ba2530f0c5a4673ced691d3ea8704d87eb9fe55009126a96c1409d3
+    name: ibm-db2u-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-db2u-operator-0.1.0/ibm-db2u-operator-0.1.0.tgz
+    version: 0.1.0
+  ibm-eventstreams-instance:
+  - apiVersion: v2
+    appVersion: 11.0.0
+    created: "2022-11-04T04:56:07.383468011Z"
+    description: A Helm chart for Kubernetes
+    digest: 84685f1e72138cd9adb5d54acb23c7c00a9aab90fa06f5df7357edc06a2989ae
+    name: ibm-eventstreams-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-eventstreams-instance-2.0.0/ibm-eventstreams-instance-2.0.0.tgz
+    version: 2.0.0
+  ibm-eventstreams-operator:
+  - apiVersion: v2
+    appVersion: 2.5.0
+    created: "2022-11-04T04:56:07.582516291Z"
+    description: A Helm chart for Kubernetes
+    digest: a146745869c8b9ada5bce5546a423c05804d71d1a602d7e58b58d27d60a8e26c
+    name: ibm-eventstreams-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-eventstreams-operator-0.2.0/ibm-eventstreams-operator-0.2.0.tgz
+    version: 0.2.0
+  ibm-license-service-instance:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:07.768585158Z"
+    description: A Helm chart for Kubernetes
+    digest: 0c31cbaeb8f46a121ddb5b0f4b807f73cbd151c8ee146fa1698832e3d18a9285
+    name: ibm-license-service-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-license-service-instance-0.1.0/ibm-license-service-instance-0.1.0.tgz
+    version: 0.1.0
+  ibm-mq-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:07.977039846Z"
+    description: A Helm chart for Kubernetes
+    digest: c558b95cccb2d2658d0a59366ebd5c81f3737ae372e5b1cda3f977fd8d2ce575
+    name: ibm-mq-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-mq-operator-0.2.4/ibm-mq-operator-0.2.4.tgz
+    version: 0.2.4
+  ibm-opsdashboard-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:08.195751243Z"
+    description: A Helm chart for Kubernetes
+    digest: 878a0a3a39201c95adf4697c94bcccf5d2d98ca408ee23d54d207548041db233
+    name: ibm-opsdashboard-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-opsdashboard-operator-0.1.0/ibm-opsdashboard-operator-0.1.0.tgz
+    version: 0.1.0
+  ibm-platform-navigator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:08.39152652Z"
+    description: A Helm chart for Kubernetes
+    digest: 7601ec73408fc11fdc6df6e85ab5d584e45ba995e156a39702f6fa9791967a26
+    name: ibm-platform-navigator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-platform-navigator-0.3.0/ibm-platform-navigator-0.3.0.tgz
+    version: 0.3.0
+  ibm-platform-navigator-instance:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:08.615463822Z"
+    description: A Helm chart for Kubernetes
+    digest: 64c42dd47c49b46c52b73ea89ed41e3d25851d31643c496d63f4a59e25836a5e
+    name: ibm-platform-navigator-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-platform-navigator-instance-0.1.0/ibm-platform-navigator-instance-0.1.0.tgz
+    version: 0.1.0
+  ibm-portworx:
+  - apiVersion: v2
+    appVersion: v1.1
+    created: "2022-11-04T04:56:08.82418771Z"
+    description: Chart to provision Portworx on an IBM cluster
+    digest: df8f6d640cbc1ec21c1b075ba52fff908e6b55175ceee694b354f66830f11e4d
+    name: ibm-portworx
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-portworx-0.8.5/ibm-portworx-0.8.5.tgz
+    version: 0.8.5
+  ibm-process-mining-instance:
+  - apiVersion: v2
+    appVersion: 1.12.0
+    created: "2022-11-04T04:56:09.033195098Z"
+    description: A Helm chart for Kubernetes
+    digest: 613dc816faa7fc283adc0eaeffb080f0be11e704a4c48a1460709746ae80f091
+    name: ibm-process-mining-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-process-mining-instance-1.0.2/ibm-process-mining-instance-1.0.2.tgz
+    version: 1.0.2
+  ibm-process-mining-operator:
+  - apiVersion: v2
+    appVersion: "2.0"
+    created: "2022-11-04T04:56:09.235906481Z"
+    description: A Helm chart for Kubernetes
+    digest: ddb8121bc4a8a370b49d82e8eadfd2a18ff10db02c833c0d3e4f15fbc0110a28
+    name: ibm-process-mining-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-process-mining-operator-0.1.1/ibm-process-mining-operator-0.1.1.tgz
+    version: 0.1.1
+  ibm-sch:
+  - apiVersion: v1
+    appVersion: 1.2.19
+    created: "2022-11-04T04:56:09.44574197Z"
+    description: Shared Configurable Helpers (SCH)
+    digest: 38164784da40275db4b7a588821b1e83639802ac390740a0afbb37b2fa1bcae1
+    keywords:
+    - Commercial
+    - Limited
+    - utility
+    - ibm-samples
+    - amd64
+    - ppc64le
+    - s390x
+    kubeVersion: '>=1.11.0'
+    name: ibm-sch
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-sch-1.2.19/ibm-sch-1.2.19.tgz
+    version: 1.2.19
+  ibm-toolkit-install:
+  - apiVersion: v2
+    appVersion: v0.15
+    created: "2022-11-04T04:56:09.652804357Z"
+    description: A Helm chart for Kubernetes
+    digest: 9483d90c9b50b2b641bc24a5e0bdd49af207a0599eff19a54ea9f9897ef24995
+    name: ibm-toolkit-install
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibm-toolkit-install-0.3.0/ibm-toolkit-install-0.3.0.tgz
+    version: 0.3.0
+  ibmcloud:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:09.894441774Z"
+    description: A Helm chart for to create a ConfigMap and Secret containing information
+      about the IBM Cloud environment
+    digest: 6d90075e1e78f2c606b8dee54b72f8832aeaf037313b69e267f34f38ee87b70c
+    name: ibmcloud
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibmcloud-0.3.1/ibmcloud-0.3.1.tgz
+    version: 0.3.1
+  ibmcloud-operator:
+  - apiVersion: v2
+    appVersion: 0.1.11
+    created: "2022-11-04T04:56:10.095688956Z"
+    description: A Helm chart for Kubernetes
+    digest: 65162a9bee6ac53cb8a0b8b1d46205df044abd2f6930cebbb640e996b513d961
+    name: ibmcloud-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibmcloud-operator-0.2.2/ibmcloud-operator-0.2.2.tgz
+    version: 0.2.2
+  ibmcloud-service:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:10.308436847Z"
+    description: A Helm chart for Kubernetes
+    digest: 863fad641209c0c047581e64cd6ea463a109bf1ff5f7239508698bffd210b77d
+    name: ibmcloud-service
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ibmcloud-service-0.1.1/ibmcloud-service-0.1.1.tgz
+    version: 0.1.1
+  instana-agent-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:10.525196743Z"
+    description: A Helm chart for Kubernetes
+    digest: 9c3b3815641b112cc6ef57a2da0fbc1ed126a246420a3926e675fa63411dfc57
+    name: instana-agent-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/instana-agent-operator-0.1.2/instana-agent-operator-0.1.2.tgz
+    version: 0.1.2
+  iteration-zero:
+  - apiVersion: v2
+    appVersion: v1.1-v1.8.2
+    created: "2022-11-04T04:56:10.759001454Z"
+    description: Helm chart to install the cli-tools image into a cluster so that
+      the iteration-zero scripts can be run
+    digest: 2be5fdf2d6a1ca3dca7026b1d54174f82f1bd5a8c5bdf463540a10ccd0c7d3af
+    name: iteration-zero
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/iteration-zero-0.2.0/iteration-zero-0.2.0.tgz
+    version: 0.2.0
+  jaeger-operator:
+  - apiVersion: v2
+    appVersion: 1.19.0
+    created: "2022-11-04T04:56:10.975288248Z"
+    description: A Helm chart to install Jaeger via the operator
+    digest: 9e02bde3037301631373de772bf73958514f8bba2e4cf22854e19c94f39c5395
+    name: jaeger-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/jaeger-operator-0.10.0/jaeger-operator-0.10.0.tgz
+    version: 0.10.0
+  kiali-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:11.155804794Z"
+    description: A Helm chart for Kubernetes
+    digest: 0bc9651eae22467ec9bf8ef8c131ac1e1da9bc4f964b2902633db10e440595f2
+    name: kiali-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/kiali-operator-0.4.0/kiali-operator-0.4.0.tgz
+    version: 0.4.0
+  namespace:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:11.344772518Z"
+    description: A Helm chart for Kubernetes
+    digest: b0b3148e30c305e377b03113195c0a1dfab57308e4ee7b0483e78909a57c2aa8
+    name: namespace
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/namespace-0.2.0/namespace-0.2.0.tgz
+    version: 0.2.0
+  namespace-rbac-cronjob:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-11-04T04:56:11.556193157Z"
+    description: A Helm chart to generate a cron job that watches Namespaces and grants
+      rbac permissions for the given service account
+    digest: 1225955facd30e9e3734b536016defa783ada5e915b05caa59e89aa154a9aa14
+    name: namespace-rbac-cronjob
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/namespace-rbac-cronjob-0.2.0/namespace-rbac-cronjob-0.2.0.tgz
+    version: 0.2.0
+  nexus-operator:
+  - apiVersion: v2
+    appVersion: 1.17.0
+    created: "2022-11-04T04:56:11.761506692Z"
+    description: A Helm chart for Kubernetes
+    digest: 4e789a80afcffc3e75f21fc20da235d6af5070dfbbc9d83f0080a4163b8294a1
+    name: nexus-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/nexus-operator-0.5.0/nexus-operator-0.5.0.tgz
+    version: 0.5.0
+  oadp-instance:
+  - apiVersion: v2
+    created: "2022-11-04T04:56:11.967803527Z"
+    description: A Helm chart for Kubernetes
+    digest: 1bd8841be485fb664ff0d4e67d2b8cfc7cadc21f778be538ed40ccb0a31d0ce7
+    name: oadp-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/oadp-instance-0.1.0/oadp-instance-0.1.0.tgz
+    version: 0.1.0
+  oadp-operator:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:12.17019996Z"
+    description: A Helm chart for Kubernetes
+    digest: 2dcbed2fa409879cf86096a2fc0f52bd84387a643aff510c9471c43e4ed99eca
+    name: oadp-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/oadp-operator-0.1.0/oadp-operator-0.1.0.tgz
+    version: 0.1.0
+  ocp-console-cli-download:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:12.381251799Z"
+    description: Chart to create a ConsoleCLIDownload resource in an OpenShift cluster
+    digest: 6e4fe5e1c14afe8e38254a87a9b0a9f8869f0a9a1880fad21a2fd741f64e6708
+    name: ocp-console-cli-download
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-console-cli-download-0.2.0/ocp-console-cli-download-0.2.0.tgz
+    version: 0.2.0
+  ocp-console-link:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:12.602925544Z"
+    description: Chart to create a ConsoleLink resource in an OpenShift cluster
+    digest: f8c38a2d73d27a323c24379a9d3a5afac5a26a3ec1f236b33b3367ff185c69d8
+    name: ocp-console-link
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-console-link-0.1.0/ocp-console-link-0.1.0.tgz
+    version: 0.1.0
+  ocp-console-notification:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:12.807309078Z"
+    description: Chart to create a ConsoleNotification resource in an OpenShift cluster
+      4
+    digest: 985678ed0e5175c99a3a3c41b4eeb8419cae000a4fb4c810b933167b5cc3beb4
+    name: ocp-console-notification
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-console-notification-0.2.1/ocp-console-notification-0.2.1.tgz
+    version: 0.2.1
+  ocp-oauth-github:
+  - apiVersion: v2
+    appVersion: v1.2-v1.3.0
+    created: "2022-11-04T04:56:13.030031725Z"
+    description: A Helm chart for Kubernetes
+    digest: 2dbf5b71d377d9b50bd95f37026966529402b374898e13301a89c14b3c5edf3f
+    name: ocp-oauth-github
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-oauth-github-0.1.1/ocp-oauth-github-0.1.1.tgz
+    version: 0.1.1
+  ocp-oauth-htpasswd:
+  - apiVersion: v2
+    appVersion: v1.2-v1.3.0
+    created: "2022-11-04T04:56:13.235523959Z"
+    description: A Helm chart for Kubernetes
+    digest: a76c97ee82bf6d49090d2ce1762ff9328abe58513144aaaaaaaad0229d163617
+    name: ocp-oauth-htpasswd
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-oauth-htpasswd-0.1.0/ocp-oauth-htpasswd-0.1.0.tgz
+    version: 0.1.0
+  ocp-route:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:13.425100684Z"
+    description: A Helm chart for Kubernetes
+    digest: 41f57061d0d65ef20632aa4382b50bdeff911832f1316ebd966835872ea809af
+    name: ocp-route
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-route-0.5.0/ocp-route-0.5.0.tgz
+    version: 0.5.0
+  ocp-service-tls:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:13.656326436Z"
+    description: A Helm chart for Kubernetes
+    digest: fa6965ef5e1131a690b5fc43b13a0322b783a0d1dde74634c7744a3e863f8d98
+    name: ocp-service-tls
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-service-tls-0.2.3/ocp-service-tls-0.2.3.tgz
+    version: 0.2.3
+  ocp-subscription:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-11-04T04:56:13.900393596Z"
+    description: A Helm chart for Kubernetes
+    digest: 545fd795423fa9300881bca9394633a65d53c94674b699f85ae1dfd48c74345b
+    name: ocp-subscription
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-subscription-1.0.0/ocp-subscription-1.0.0.tgz
+    version: 1.0.0
+  ocp-userspaces-daemonset:
+  - apiVersion: v2
+    appVersion: v0.14
+    created: "2022-11-04T04:56:14.10392833Z"
+    dependencies:
+    - name: service-account
+      repository: https://charts.cloudnativetoolkit.dev/
+      version: 0.6.0
+    description: A chart to create a daemonset that will increase the max userspaces
+      limit for
+    digest: f363017d70a112bcdefc61d90e51b1e498e7f437c2fed1acc08307e1bb39e232
+    name: ocp-userspaces-daemonset
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocp-userspaces-daemonset-0.1.1/ocp-userspaces-daemonset-0.1.1.tgz
+    version: 0.1.1
+  ocs-operator:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-11-04T04:56:14.303663361Z"
+    description: A Helm chart for deploying infrastrucure reference architecture to
+      OpenShift 4.x clusters
+    digest: cefd6edbb402c1aa033cfd98e6885a9b7086c62eccd7036484daec3164bf0575
+    name: ocs-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/ocs-operator-0.2.4/ocs-operator-0.2.4.tgz
+    version: 0.2.4
+  odf-operator:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-11-04T04:56:14.5151404Z"
+    description: A Helm chart for deploying infrastrucure reference architecture to
+      OpenShift 4.x clusters
+    digest: 50ce66f85ac72db99d420557ae5414679d5dbac36e92b27430bf1a727c1d7ae0
+    name: odf-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/odf-operator-0.1.3/odf-operator-0.1.3.tgz
+    version: 0.1.3
+  openldap:
+  - apiVersion: v1
+    created: "2022-11-04T04:56:14.719268934Z"
+    description: A OpenLDAP Chart for Kubernetes
+    digest: 3f7bc84a931e4fba4481a718c4cd2b78b4f49a5ed2d63b31938650db2a0cbe6e
+    home: https://www.openldap.ort
+    keywords:
+    - ldap
+    maintainers:
+    - email: hans.kristian.moen@gmail.com
+      name: Hans Kristian Moen
+    name: openldap
+    sources:
+    - https://github.com/openldap/openldap
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/openldap-0.1.9/openldap-0.1.9.tgz
+    version: 0.1.9
+  openshift-gitops:
+  - apiVersion: v2
+    appVersion: 0.4.0
+    created: "2022-11-04T04:56:14.943338381Z"
+    description: A Helm chart to install ArgoCD via the operator
+    digest: 3fc7a3c51dfbe21fa37d6dace32544738379bbd7d7f3d7134aa8491bbfc399c9
+    name: openshift-gitops
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/openshift-gitops-0.9.1/openshift-gitops-0.9.1.tgz
+    version: 0.9.1
+  openshift-gitops-instance:
+  - apiVersion: v2
+    appVersion: 1.22.9
+    created: "2022-11-04T04:56:15.166735527Z"
+    description: A Helm chart for Kubernetes
+    digest: 8839510da408aae59906c42079f7bf6309b7c4c22776ad4e00e44892a50fe039
+    name: openshift-gitops-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/openshift-gitops-instance-0.5.4/openshift-gitops-instance-0.5.4.tgz
+    version: 0.5.4
+  openshift-serverless:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:15.386696972Z"
+    description: A Helm chart for Kubernetes
+    digest: a6628dc6cd52deb41923974eaf1373bb06dfd4eb37140123e86f440c6b3f5e2d
+    name: openshift-serverless
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/openshift-serverless-0.1.1/openshift-serverless-0.1.1.tgz
+    version: 0.1.1
+  pact-broker:
+  - apiVersion: v2
+    appVersion: 2.101.0.0
+    created: "2022-11-04T04:56:15.583379301Z"
+    description: A Helm chart for Kubernetes
+    digest: 8cea09a2093ec315f28382efd0ef4a0ab825b0cb432501efb457b4b28e13bf17
+    name: pact-broker
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/pact-broker-0.3.0/pact-broker-0.3.0.tgz
+    version: 0.3.0
+  paw:
+  - apiVersion: v1
+    appVersion: 2.0.76
+    created: "2022-11-04T04:56:15.834617866Z"
+    description: PA Workspace Local
+    digest: 530e2e7ee6a5306d9a61356842633592d479262d628a65e5730411595f347dd6
+    keywords:
+    - Commercial
+    - Limited
+    - amd64
+    - ICP
+    - Analytics
+    kubeVersion: '>=1.11.0'
+    name: paw
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/paw-1.0.0/paw-1.0.0.tgz
+    version: 1.0.0
+  rbac:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:16.030535195Z"
+    description: A Helm chart for Kubernetes
+    digest: d62c684ebadbc87b96606bbb171f36d442898f5e75b6dafcc6f6674574d10d96
+    name: rbac
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/rbac-0.2.0/rbac-0.2.0.tgz
+    version: 0.2.0
+  refarch-infraconfig:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-11-04T04:56:16.234650029Z"
+    description: A Helm chart for deploying infrastrucure reference architecture to
+      OpenShift 4.x clusters
+    digest: fb04449b33fd627908ebda028758e76faab6bff90dd3b726f01c51ae5d469155
+    name: refarch-infraconfig
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/refarch-infraconfig-0.2.2/refarch-infraconfig-0.2.2.tgz
+    version: 0.2.2
+  refarch-machinesets:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-11-04T04:56:16.441047764Z"
+    description: A Helm chart for deploying infrastrucure reference architecture to
+      OpenShift 4.x clusters
+    digest: 8f0121b10b29cc25231514570b7254c6dc655acf2371d9507fbfb902ac3586d2
+    name: refarch-machinesets
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/refarch-machinesets-0.4.9/refarch-machinesets-0.4.9.tgz
+    version: 0.4.9
+  robot-shop:
+  - apiVersion: v1
+    created: "2022-11-04T04:56:16.660439108Z"
+    description: Sample micoservices application
+    digest: 297cd363881672d6ee2e640b617faf8cab065865e51e7613ea3c6b3947e1d72d
+    home: https://github.com/instana/robot-shop
+    name: robot-shop
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/robot-shop-1.1.1/robot-shop-1.1.1.tgz
+    version: 1.1.1
+  sealed-secrets-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:16.869645545Z"
+    description: A Helm chart for Kubernetes
+    digest: d5e698e6b4cccec3c9c612112857037adb656cab921f2b7f27290308c04cedc6
+    name: sealed-secrets-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/sealed-secrets-operator-0.1.0/sealed-secrets-operator-0.1.0.tgz
+    version: 0.1.0
+  service-account:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:17.061414071Z"
+    description: A Helm chart for Kubernetes
+    digest: f63a77aee1de2536f78295a77310a21d0c3d99df3419ad645820daa97e8427c0
+    name: service-account
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/service-account-1.2.1/service-account-1.2.1.tgz
+    version: 1.2.1
+  service-mesh-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:17.280201915Z"
+    description: A Helm chart for Kubernetes
+    digest: 3cdcb526d89fe0c487328d76992d435f8921676e46424e4c85d2acf0278a269f
+    name: service-mesh-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/service-mesh-operator-0.6.0/service-mesh-operator-0.6.0.tgz
+    version: 0.6.0
+  service-signed-cert:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:17.482822548Z"
+    description: A Helm chart for Kubernetes
+    digest: ede7d7bcaaae86330f6aeae51aa06fd8d2607f22e81efe096caf2401d41c825f
+    name: service-signed-cert
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/service-signed-cert-0.3.24/service-signed-cert-0.3.24.tgz
+    version: 0.3.24
+  setup-job:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-11-04T04:56:17.703748893Z"
+    description: A Helm chart for Kubernetes
+    digest: 1c0891b7b3a549edaeb1083729413c497602a201812a8e6b6fd2f5ffbb989f67
+    name: setup-job
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/setup-job-0.3.0/setup-job-0.3.0.tgz
+    version: 0.3.0
+  slack-notifications:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-04T04:56:17.922243737Z"
+    description: A Helm chart for Kubernetes
+    digest: 2aa73740e5f2c26be8713bb12511cda0c9beeb5683a9155708048ee4a5215418
+    name: slack-notifications
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/slack-notifications-0.1.7/slack-notifications-0.1.7.tgz
+    version: 0.1.7
+  spp-catalog:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:18.133570475Z"
+    description: A Helm chart for Kubernetes
+    digest: 269a2299f24dec4bdda0452deb75393ee89f652c5446adcd62c27e9a70bd0bdf
+    name: spp-catalog
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/spp-catalog-0.1/spp-catalog-0.1.tgz
+    version: "0.1"
+  spp-instance:
+  - apiVersion: v2
+    appVersion: 10.1.8.2
+    created: "2022-11-04T04:56:18.329505004Z"
+    description: A Helm chart for Kubernetes
+    digest: c8f6745140c8b3b5ec4ef64b438d452d75e56ba5fdda5c7a9ce6752237272327
+    name: spp-instance
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/spp-instance-0.1.0/spp-instance-0.1.0.tgz
+    version: 0.1.0
+  spp-operator:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:18.539681642Z"
+    description: A Helm chart for Kubernetes
+    digest: f8048deaa268c728a93398b179b7516c6fa01c799c2d196d33cd356bfbb0b637
+    name: spp-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/spp-operator-0.1.0/spp-operator-0.1.0.tgz
+    version: 0.1.0
+  starter-kit:
+  - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2022-11-04T04:56:18.748310079Z"
+    description: A Helm chart for Kubernetes
+    digest: 9000ac32fc2640d7878eeb7ef0fb13dab11c4700f9c735c1bea8230116c8e305
+    name: starter-kit
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/starter-kit-0.6.2/starter-kit-0.6.2.tgz
+    version: 0.6.2
+  swaggereditor:
+  - apiVersion: v2
+    appVersion: v3.14.5
+    created: "2022-11-04T04:56:18.96282462Z"
+    description: A Helm chart for Kubernetes
+    digest: 9913f59999e77b9e9fa36c2b47a42beb4d771d2ec313125a04104da88b2a5172
+    name: swaggereditor
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/swaggereditor-2.1.0/swaggereditor-2.1.0.tgz
+    version: 2.1.0
+  tekton-operator:
+  - apiVersion: v2
+    appVersion: 1.18.0
+    created: "2022-11-04T04:56:19.197170848Z"
+    description: A Helm chart to install the Tekton operator
+    digest: 2b4b85fd906c3dd82f41424d14aa9756efb03e9d0899d1907bd514074bd6e984
+    name: tekton-operator
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/tekton-operator-0.3.2/tekton-operator-0.3.2.tgz
+    version: 0.3.2
+  tool-config:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:19.423055741Z"
+    description: A Helm chart to create a ConfigMap and Secret containing the configuration
+      information for a deployed tool
+    digest: d0a84d1a8b400d8c28308eb3147709672db6b08e1f77ac895c15237e533984e2
+    name: tool-config
+    type: application
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/tool-config-0.14.0/tool-config-0.14.0.tgz
+    version: 0.14.0
+  tool-test:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-04T04:56:19.636899382Z"
+    description: A Helm chart for Kubernetes to test tool kit deployments
+    digest: 3a5b762b0ba4eedfa83eebce6530a1253a91327d7c0592e2c63c02e5ec42615e
+    name: tool-test
+    urls:
+    - https://github.com/tutorial-gitops/toolkit-charts/releases/download/tool-test-0.2.1/tool-test-0.2.1.tgz
+    version: 0.2.1
+generated: "2022-11-04T04:55:57.102467204Z"
