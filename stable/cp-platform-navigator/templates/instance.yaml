@@ -1,8 +1,0 @@
-apiVersion: integration.ibm.com/v1beta1
-kind: PlatformNavigator
-metadata:
-  name: {{ include "cp-platform-navigator.name" . }}
-spec:
-  license:
-    accept: true
-  {{- toYaml .Values.instance | nindent 2 }}

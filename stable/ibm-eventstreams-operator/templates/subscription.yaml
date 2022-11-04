@@ -1,7 +1,0 @@
-apiVersion: operators.coreos.com/v1alpha1
-kind: Subscription
-metadata:
-  name: {{ .Values.subscriptions.ibmeventstreams.name }}
-  annotations:
-spec:
-  {{- toYaml .Values.subscriptions.ibmeventstreams.subscription | nindent 2 }}

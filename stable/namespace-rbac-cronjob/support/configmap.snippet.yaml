@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: {{ include "console-link-cronjob.fullname" . }}
-  labels:
-  {{- include "console-link-cronjob.labels" . | nindent 4 }}
