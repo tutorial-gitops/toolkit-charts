@@ -1,6 +1,6 @@
 apiVersion: v2
 name: ocp-console-notification
-description: Chart to create a ConsoleNotification resource in an OpenShift cluster 4
+description: Chart to create a ConsoleNotification resource in an OpenShift cluster 4x
 
 # A chart can be either an 'application' or a 'library' chart.
 #
